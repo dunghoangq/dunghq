@@ -1,0 +1,40 @@
+{
+    "logs": {
+        "level": "debug",
+        "transports": {
+            "console": {
+                "enabled": true
+            },
+            "file": {
+                "enabled": true,
+                "name": "refinitiv-data-lib.log"
+            }
+        }
+    },
+    "sessions": {
+        "default": "desktop.workspace",
+        "platform": {
+            "rdp": {
+                "app-key": "f0d7a8c9503e4ca78f3bd8dbf37ac4a6414e8b2a",
+                "username": "dungqhoang@deloitte.com",
+                "password": "Dung@1102"
+            },
+            "deployed": {
+                "app-key": "f0d7a8c9503e4ca78f3bd8dbf37ac4a6414e8b2a",
+                "realtime-distribution-system": {
+                    "url" : "ws://YOUR DEPLOYED HOST:PORT GOES HERE!",
+                    "dacs" : {
+                        "username" : "YOUR DACS ID GOES HERE!",
+                        "application-id" : 256,
+                        "position" : ""
+                    }
+                }
+            }
+        },
+        "desktop": {
+            "workspace": {
+                "app-key": "f0d7a8c9503e4ca78f3bd8dbf37ac4a6414e8b2a"
+            }
+        }
+    }
+}
