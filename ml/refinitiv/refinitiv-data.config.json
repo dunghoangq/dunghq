@@ -3,10 +3,10 @@
         "level": "debug",
         "transports": {
             "console": {
-                "enabled": true
+                "enabled": false
             },
             "file": {
-                "enabled": true,
+                "enabled": false,
                 "name": "refinitiv-data-lib.log"
             }
         }
