@@ -12,8 +12,16 @@ rd.open_session(name='platform.rdp')
 # ----------------------------GET TIMESERIES DATA---------------------------- #
 ric = 'aVNCGDPYA'
 
-df = rd.get_data(universe=ric)
-print(df)
+df = rd.get_data(
+    universe=[ric],
+    fields=["Value"],
+    parameters={"SDate": "2010-01-01", "EDate": "2024-01-01", "Frq": "Q"}
+
+)
+
+print(df.head())
+
+# print(df)
 
 # ric_fields = rd.get_fields(universe=ric)
 
